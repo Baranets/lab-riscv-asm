@@ -55,9 +55,10 @@ addi t4, t4, 1 # increment element pointer
 lw t5, 0(sp)
 addi sp, sp, 4
 
-bge t5, t6     # result < poped value
-sw t5, 0(a5)   # store new result
+bge t5, t6, popCycleExit # result < poped value
+sw t5, 0(a5)             # store new result
 
+popCycleExit:
 blt t4, t3, popCycle # i < N * M
 ret
 
