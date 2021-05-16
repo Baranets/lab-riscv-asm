@@ -55,20 +55,6 @@ int pop(struct Stack* stack) {
 
 // MARK: - Processing Function
 
-// int process(int n, int m, int array[N][M]) {
-//     int result = __INT_MAX__;
-
-//     for (int i = 0; i < n; i++) {
-//         for (int j = 0; j < m; j++) {
-//             if (array[i][j] < result) {
-//                 result = array[i][j];
-//             }
-//         }
-//     }
-
-//     return result;
-// }
-
 int process(struct Stack* stack) {
     int result = __INT_MAX__;
     

@@ -17,3 +17,7 @@ clean:
 
 c_build: 
 	gcc lab-riscv-asm.c -o lab-riscv-asm
+
+c_run:
+	make c_build
+	./lab-riscv-asm
