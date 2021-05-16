@@ -13,6 +13,7 @@ default: $(dump_name) $(executable_name)
 clean:
 	@rm -f $(dump_name)
 	@rm -f $(executable_name)
+	@rm -f lab-riscv-asm
 
 c_build: 
 	gcc lab-riscv-asm.c -o lab-riscv-asm
